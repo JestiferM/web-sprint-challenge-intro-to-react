@@ -1,15 +1,19 @@
 import React from "react";
+import styled from 'styled-components';
+
 import Character from './Character'
 
+const StyledCharacters = styled.div`
 
+`
 const Characters = (props) => {
 
     return (
-        <div className='main'>
+        <StyledCharacters>
         {props.data.map(data => (
             <Character data={data} key={data.mass}/>
-        ))}
-        </div>
+        )) }
+        </StyledCharacters>
     )
 }
 export default Characters;
