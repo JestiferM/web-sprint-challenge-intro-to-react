@@ -4,6 +4,11 @@ import styled from 'styled-components';
 import Character from './Character'
 
 const StyledCharacters = styled.div`
+width:100%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 
 `
 const Characters = (props) => {
